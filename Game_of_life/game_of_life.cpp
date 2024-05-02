@@ -73,6 +73,11 @@ void game_of_life::provjera_okolo(int i, int j)
         }
     }
     //pravila
+    pravila(brojacZivih, i, j);
+}
+
+void game_of_life::pravila(int brojacZivih, int i, int j)
+{
     if (brojacZivih < 2 || brojacZivih > 3)
     {
         _sljedeca_generacija[i][j] = false;

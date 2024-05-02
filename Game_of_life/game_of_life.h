@@ -15,13 +15,14 @@ private:
 	bool _sljedeca_generacija[REDAKA][STUPACA];
 	bool slucajna_vrijednost();
 	bool celija_zauzeta(int i, int j);
+	void provjera_okolo(int i, int j);
+	void pravila(int brojac, int i, int j);
 
 public:
 	game_of_life();
 	void sljedeca_generacija();
 	void iscrtaj();
 	void inicijalizacija();
-	void provjera_okolo(int i, int j);
 };
 
 #endif
